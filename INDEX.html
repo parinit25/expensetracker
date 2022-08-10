@@ -1,0 +1,29 @@
+<!DOCTYPE h
+<html>
+    <head>
+        <title>EXPENSE TRACKER</title>
+
+    </head>
+    <body>
+        <h1>EXPENSE TRACKER</h1>
+        <form onsubmit="saveToLocalStorage(event)">
+            <label for="expamount">Expense Amount</label>
+            <input type="number" id="expamount" name = "expamount"><br>
+            <label for="description">Enter Description</label>
+            <input type="text" id="description" name = "description"><br>
+            <label for="category">Choose a Category:</label>
+            <select id="category" name="categoryList" for="category">
+              <option value="movies">Movies</option>
+              <option value="rent">Rent</option>
+              <option value="food">Food</option>
+              <option value="travelling">Travelling</option>
+              <option value="other">Other</option>
+            </select><br>
+            <button type="submit">Submit</button>
+        </form>
+        <ul id="listOfUsers"> </ul>
+        
+
+    </body>
+    <script src="expenseTracker.js"></script>
+</html>
